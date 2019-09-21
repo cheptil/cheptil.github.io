@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  </head>
+ <body >
+
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous">
+	</script>
+
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"></link>
+
+	<table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Gender</th>
+                <th>Name</th>
+                <th>Likes</th>
+                <th>Norm Likes</th>
+                <th>Conf Likes</th>
+                <th>Conf Norm Likes</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Gender</th>
+                <th>Name</th>
+                <th>Likes</th>
+                <th>Norm Likes</th>
+                <th>Conf Likes</th>
+                <th>Conf Norm Likes</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+	
+	$(document).ready(function() {
+	    $('#example').DataTable( {
+	        "ajax": 'cmc2019rating.txt',
+	        "order": [[ 3, "desc" ]],
+            "pageLength": 25
+	    } );
+	} );
+
+	</script>
+
+  </body>
+</html>
