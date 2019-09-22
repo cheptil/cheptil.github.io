@@ -423,5 +423,5 @@
 ["m","<a href='https://vk.com/id427454856'>vagradyan areg</a>","39","18.508","-1","-1.0"],
 ["f","<a href='https://vk.com/id497368094'>yumagulova aylina</a>","52","25.424","-1","-1.0"],
 ["?","<a href='https://vk.com/id472862820'>yuri yuru</a>","-1","-1.0","-1","-1.0"],
-["?","<a href='https://vk.com/id557533008'>吴 思矾</a>","0","0.0","-1","-1.0"],
+["?","<a href='https://vk.com/id557533008'>吴 思矾</a>","0","0.0","-1","-1.0"]
 ] }
