@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  </head>
+ <body >
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+       ym(52045344, "init", {
+            id:52045344,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/52045344" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous">
+	</script>
+
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"></link>
+
+	<table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Screen name</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Pagerank</th>
+                <th>Authority</th>
+                <th>Sum of values</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Id</th>
+                <th>Screen name</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Pagerank</th>
+                <th>Authority</th>
+                <th>Sum of values</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+	
+	$(document).ready(function() {
+	    $('#example').DataTable( {
+	        "ajax": 'arrays.txt',
+	        "order": [[ 6, "desc" ]],
+            "pageLength": 50
+	    } );
+	} );
+
+	</script>
+
+  </body>
+</html>
